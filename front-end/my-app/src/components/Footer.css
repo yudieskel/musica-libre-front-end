@@ -1,0 +1,79 @@
+footer {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-area: redes-pie-de-pagina;
+  height: 100%;
+  width: 100%;
+}
+.redes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 0 30px;
+}
+.facebook {
+  display: grid;
+  grid-column: 1 / 2;
+}
+.instagram {
+  display: grid;
+  grid-column: 2 / 3;
+}
+.youtube {
+  display: grid;
+  grid-column: 3 / 4;
+}
+.costv {
+  display: grid;
+  grid-column: 4 / 5;
+}
+.odysee {
+  display: grid;
+  grid-column: 5 / 6;
+}
+.spotify {
+  display: grid;
+  grid-column: 6 / 7;
+}
+ul.redes li > a > img {
+  width: 25px;
+  height: 25px;
+  transition-property: transform;
+  transition-duration: 10ms;
+  transition-delay: 0;
+  transition-timing-function: linear;
+}
+ul.redes li > a > img:hover {
+  transform: scale(1.5, 1.5);
+}
+h5 {
+  text-align: center;
+  color: var(--azulMenosOscuro);
+}
+.span-footer {
+  font-size: 15px;
+  color: var(--azulMenosOscuro);
+}
+.copyright {
+  width: 10px;
+  height: 10px;
+}
+.terminos-condiciones {
+  background: none;
+  outline: none;
+  text-decoration: none;
+  color: var(--blanco);
+}
+.terminos-condiciones:hover {
+  color: var(--azulCeleste);
+}
+
+/*Aquí inicia mi disenho responsivo*/
+@media (max-width: 600px) {
+  footer {
+    display: none;
+    }
+}

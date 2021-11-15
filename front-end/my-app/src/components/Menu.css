@@ -1,0 +1,50 @@
+.menu-principal {
+    display: grid;
+    align-items: center;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-area: navegacion-principal;
+    height: 100%;
+    width: 100%;
+  }
+  .menu-principal > li > a.active {
+    border-bottom: 4px solid var(--naranja);
+    outline: none;
+    cursor: none;
+  }
+  .menu-principal > li > a {
+    display: grid;
+    margin: 0 5vw;
+    width: 100px;
+    height: 40px;
+    background: none;
+    text-decoration: none;
+    color: var(--blanco);
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .inicio {
+    display: grid;
+    grid-column: 1 / 2;
+  }
+  .entrar {
+    display: grid;
+    grid-column: 2 / 3;
+  }
+  .libreria {
+    display: grid;
+    grid-column: 3 / 4;
+  }
+  .contacto {
+    display: grid;
+    grid-column: 4 / 5;
+  }  
+
+  /*Aquí inicia mi disenho responsivo*/
+  @media (max-width: 600px) {
+    header {
+      display: none;
+      }
+  }

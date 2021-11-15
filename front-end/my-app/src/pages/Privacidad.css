@@ -1,0 +1,32 @@
+div.privacidad {
+    margin: auto;
+    width: 80%;
+    min-height: 100%;
+    padding: 20px;
+    background-color: rgb(214, 214, 214, 0.1);
+}
+.privacidad > h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.privacidad > p {
+    text-align: justify;
+    line-height: 1.25;
+}
+ul.privacidad > li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+/*Aquí inicia mi disenho responsivo*/
+@media (max-width: 600px) {
+div.privacidad {
+    width: 100%;
+}
+.privacidad > p {
+    font-size: 0.8em;
+}
+.privacidad > h3, h4 {
+    font-size: 1em;
+}   
+}

@@ -1,0 +1,67 @@
+.error {
+    display: grid;
+    grid-template-rows: 1fr 2fr 7fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                        "mensaje"
+                        "codigo"
+                        "imagen";
+    justify-items: center;
+    align-items: center;
+  }
+  .error > h1 {
+    display: grid;
+    grid-area: mensaje;
+  }
+  .status {
+      display: grid;
+      grid-area: codigo;
+      cursor: pointer;
+      margin: 20px;
+      padding: 10px 20px;
+      animation-name: error;
+      animation-duration: 500ms;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-play-state: running;
+    }
+    div.status:hover {
+      animation-play-state: paused;
+    }
+    @keyframes error {
+      0% {
+        background-color:dodgerblue;
+        transform: rotate(15deg);
+      }
+      100% {
+        background-color:darkgrey;
+        transform: rotate(-15deg);
+      }
+    }
+    .error img {
+      display: grid;
+      grid-area: imagen;
+      width: 400px;
+      height: 400px;
+    }
+
+  /*Aquí inicia mi disenho responsivo*/
+    @media (max-width: 600px) {
+    .error {
+      grid-template-rows: 0.5fr 1fr 0.5fr;
+    }
+    .error > h1 {
+      font-size: 1em;
+    }
+    .error img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+    @media (max-width: 400px) {
+    .error img {
+      width: 200px;
+      height: 200px;
+    }
+  }

@@ -1,0 +1,27 @@
+div.terminos {
+    margin: auto;
+    width: 80%;
+    min-height: 100%;
+    padding: 20px;
+    background-color: rgb(214, 214, 214, 0.1);
+}
+.terminos > h3 {
+    text-align: center;
+}
+.terminos > p {
+    text-align: justify;
+    line-height: 1.25;
+}
+
+/*Aquí inicia mi disenho responsivo*/
+@media (max-width: 600px) {
+div.terminos {
+    width: 100%;
+}
+.terminos > p {
+    font-size: 0.8em;
+}
+.terminos > h3, h4 {
+    font-size: 1em;
+}   
+}
